@@ -20,4 +20,32 @@ describe('test calculate', () => {
     const result = calculate(secondIntry, '=');
     expect(result.total).toBe('6');
   });
+  test('to division', () => {
+    const obj = { total: null, next: '9', operation: null };
+    const operation = calculate(obj, '÷');
+    const secondIntry = calculate(operation, '3');
+    const result = calculate(secondIntry, '=');
+    expect(result.total).toBe('3');
+  });
+  test('to addition', () => {
+    const obj = { total: null, next: '10', operation: null };
+    const operation = calculate(obj, '+');
+    const secondIntry = calculate(operation, '3');
+    const result = calculate(secondIntry, '=');
+    expect(result.total).toBe('13');
+  });
+  test('to subtraction', () => {
+    const obj = { total: null, next: '9', operation: null };
+    const operation = calculate(obj, '-');
+    const secondIntry = calculate(operation, '6');
+    const result = calculate(secondIntry, '=');
+    expect(result.total).toBe('3');
+  });
+  test('to modular', () => {
+    const obj = { total: null, next: '9', operation: null };
+    const operation = calculate(obj, '%');
+    const secondIntry = calculate(operation, '3');
+    const result = calculate(secondIntry, '=');
+    expect(result.total).toBe('0');
+  });
 });
