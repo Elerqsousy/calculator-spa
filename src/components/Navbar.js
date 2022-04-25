@@ -23,10 +23,10 @@ const Navbar = () => {
 
   return (
     <nav className="navBar">
-      <h1 className="navHeader">Math Magicians</h1>
-      <ul className="navLinks">
+      <h1>Math Magicians</h1>
+      <ul>
         {links.map((link) => (
-          <li key={link.id} className="navLink">
+          <li key={link.id}>
             <NavLink to={link.path}>{link.text}</NavLink>
           </li>
         ))}

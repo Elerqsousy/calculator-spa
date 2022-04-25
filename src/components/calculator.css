@@ -1,9 +1,8 @@
 .calculator-container {
-  margin-top: 20px;
   display: grid;
-  grid-template-columns: 60px 60px 60px 60px;
-  grid-template-rows: 90px 60px 60px 60px 60px 60px;
-  gap: 3px 3px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  gap: 5px 5px;
   grid-auto-flow: row;
   grid-template-areas:
     'screen screen screen screen'
@@ -12,9 +11,9 @@
     'btn-4 btn-5 btn-6 btn-subtract'
     'btn-1 btn-2 btn-3 btn-add'
     'btn-0 btn-0 btn-dot btn-equal';
-  background: #242582;
+  background: #d6d6d6;
   width: fit-content;
-  padding: 8px;
+  padding: 5px;
   border-radius: 10px;
 }
 
@@ -26,14 +25,12 @@
 
 .screen {
   grid-area: screen;
-  background: white;
-  color: #2f2fa2;
+  background: #858694;
+  color: white;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 30px;
   border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
 }
 
 .screen > div {
@@ -119,27 +116,9 @@
 }
 
 .orange {
-  background: #f64c72;
-  color: white;
+  background: #f5913e;
 }
 
 .light-gray {
-  background: #99738e;
-  color: white;
-}
-
-.orange:hover {
-  background: #fc5f81;
-}
-
-.light-gray:hover {
-  background: #a08398;
-}
-
-.orange:checked {
-  background: #ff3c66;
-}
-
-.light-gray:focus {
-  background: #a06a91;
+  background: #e0e0e0;
 }
