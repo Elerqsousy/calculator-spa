@@ -17,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-Check the [Live Demo](https://rococo-naiad-8b8896.netlify.app) deployed on github pages.
+Check the [Live Demo](https://fancy-khapse-193ed3.netlify.app) deployed on github pages.
 
 ### setting up the project
 To setup the project, you will need to clone the file locally and follow one of the scripts available below after running `npm install` to install project dependencies
