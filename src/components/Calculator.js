@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import Btns from './Btns';
+import './calculator.css';
 
 // calculate(obj, buttonName)
 
@@ -31,7 +32,7 @@ const Calculator = () => {
   return (
     <div className="calculator-container">
       <div className="screen">
-        <div>{screen}</div>
+        <div data-testid="screen">{screen}</div>
       </div>
       <Btns handleClick={handleClick} />
     </div>

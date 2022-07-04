@@ -1,8 +1,8 @@
 import React from 'react';
 
 const HomePgae = () => (
-  <div className="pageContainer">
-    <h2>Welcome to out page!</h2>
+  <div>
+    <h2>Welcome to our page!</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
       recusandae unde at explicabo nobis ad ipsa totam quidem, natus, corporis
@@ -30,7 +30,6 @@ const HomePgae = () => (
       facilis debitis iure quisquam animi impedit maiores minus amet expedita!
     </p>
   </div>
-
 );
 
 export default HomePgae;
